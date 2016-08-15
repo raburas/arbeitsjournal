@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Arbeitsjournal</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="app/test.js"></script>
+    <script>
+        window.onload = httpGetAsync("/Journal/GetHelloWorld", setResultat);
+    </script>
+</head>
+<body>
+    <h1>Example - Client/Server Call (JavaScript <=> C# REST WebAPI)</h1>
+    <label style="font-weight:bold;">Resultat: </label><span id="resultat"></span>
+</body>
+</html>
