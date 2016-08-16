@@ -6,8 +6,15 @@ namespace ArbeitsJournal.Service.Controllers
     {
 
         [HttpGet]
-        public string GetHelloWorld() {
-            return "Hello world from your server";
+        public IHttpActionResult GetHelloWorld() {
+
+            return Ok("Hello world from your server");
+        }
+        
+        [HttpPost]
+        public IHttpActionResult SetHelloWorld(string helloText) {
+
+            return Ok("Hello world from your server" + helloText);
         }
     }
 }
